@@ -1,0 +1,20 @@
+body{
+  background-color: #0489B1;
+  color: #F2F2F2;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.egcc_page{
+  background-color: white;
+  color: #585858;
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+
+h1{
+  color: #B40404;
+  border-bottom: #B40404 solid thin;
+}
