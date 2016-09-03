@@ -15,7 +15,17 @@
       </section>
       <main class="egcc_content">
         
-        Esta es la sección de trabajo
+          <h1>DATOS DEL CURSO</h1>
+          <p>- Nombre: Programación II</p>
+          <p>- Ciclo: IV</p>
+          <p>- Creditos: 4</p>
+          <p>- Profesor: Gustavo Coronel</p>
+          
+          <h1>INGEGRANTES</h1>
+          <p>- Jaimito Torres</p>
+          <p>- Karla Jaramillo</p>
+          <p>- Fernando Castro</p>
+          <p>- Claudia Cisneros</p>
         
       </main>
       <footer class="egcc_footer">
