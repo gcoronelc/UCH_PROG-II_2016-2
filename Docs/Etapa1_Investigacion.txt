@@ -17,10 +17,10 @@
 
 
 7.- JQuery
-	Palomo, Villanque, Sanchez, Chavez Aramburu
+    Palomo, Villanque, Sanchez, Chavez Aramburu
 
 8.- Angular JS
-	Baron, Bardales, Canales, Mamani.
+    Baron, Bardales, Canales, Mamani.
 
 9.- Servicios REST
     Ordoñez, Calle, Arroyo, Lipa
@@ -28,5 +28,6 @@
 10.- websockets
      Infantes, Vargas, Martel, Leon
 	 
+
 
 

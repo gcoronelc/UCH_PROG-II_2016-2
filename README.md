@@ -1,4 +1,4 @@
-![PROGRAMACIÓN II](https://raw.githubusercontent.com/gcoronelc/UCH_PROG_II_2016_2/master/uch_prog2_2016_2.png)
+![PROGRAMACIÓN II](https://raw.githubusercontent.com/gcoronelc/UCH_PROG-II_2016-2/master/uch_prog2_2016_2.png)
 
 # PROGRAMACIÓN II
 
