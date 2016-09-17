@@ -11,10 +11,10 @@
 	
 
 5.- Pruebas unitarias
-    
+    Neyra
 
 6.- Creación de log
-
+    Huayhuas
 
 7.- JQuery
     Palomo, Villanque, Sanchez, Chavez Aramburu
