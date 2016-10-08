@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Echo Chamber</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p></p>
+        <p></p>
+        <div>
+            <h4>Mensaje: </h4>
+            <input type="text" id="messageinput"/>
+
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+
+            <button type="button" onclick="openSocket()">Open</button>
+            <button type="button" onclick="send();">Send</button>
+            <button type="button" onclick="closeSocket()">Close</button>
+        </div>
+        <p></p>
+        <p></p>
+        <div id="messages"></div>
+        <script type="text/javascript">
+
+            var webSocket;
+            var messages = document.getElementsById("messages");
+
+            function openSocket() {
+                if (webSocket !== undefined && webSocket.readyState !== webSocket.CLOSED) {
+                    writeResponse("WebSocket ya esta abierto");
+                    return;
+                }
+                webSocket = new webSocket("ws://localhost:8080/WebSocketDemo/proceso");
+
+                webSocket.onopen = function (event) {
+                    if (event.data === undefined)
+                        return;
+                    writeResponse(event.data);
+                };
+                webSocket.onmessage = function (event) {
+                    writeResponse(event.data);
+
+                };
+                webSocket.onclose = function (event) {
+                    writeResponse("conection closed");
+                };
+            }
+            function send() {
+                var text = document.getElementsById("messageinput").value;
+                webSocket.send(text);
+            }
+            function closeSocket() {
+                webSocket.close();
+            }
+            function writeResponse(text) {
+                messages.innerHTML += "<br/>" + text;
+            }
+        </script>                  
+    </body>
+</html>
