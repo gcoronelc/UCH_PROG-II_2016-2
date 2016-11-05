@@ -15,9 +15,13 @@
   $stm = $dbh->prepare($query); 
   $stm->execute( array($cuenta) );
   
+  echo "Filas: " . $stm->rowCount() . "<br/>";
+  
   while ($row = $stm->fetch()) {
     echo "{$row['dtt_movifecha']} - {$row['chr_tipocodigo']} – {$row['dec_moviimporte']}<br/>";
-  } $dbh = null;
+  } 
+  
+  $dbh = null;
   
 } catch (PDOException $e) {
   echo $e->getMessage();
