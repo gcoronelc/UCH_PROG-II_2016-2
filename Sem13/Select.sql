@@ -26,3 +26,41 @@ where chr_sucucodigo='001'
 and chr_monecodigo='01';
 
 
+
+
+
+
+ sucucodigo
+ sucunombre
+ cliecodigo
+ cliepaterno
+ cliematerno
+ clienombre
+ cuencodigo
+ cuensaldo
+ cuenestado
+ movinumero
+ movifecha
+ moviimporte
+ cuenreferencia
+ tipocodigo
+ tiponombre
+ tipoaccion
+ monecodigo
+ monenombre
+ 
+ 
+ SELECT TIPOCODIGO, TIPONOMBRE, 
+    COUNT(1) CANTMOV, SUM(moviimporte) IMPORTE
+ FROM V_MOVIMIENTO
+ WHERE SUCUCODIGO='001' AND MONECODIGO='02'
+ GROUP BY TIPOCODIGO, TIPONOMBRE;
+ 
+ 
+ 
+  select , , 
+    count(1) , sum(moviimporte) 
+ 
+ 
+ 
+ 
